@@ -1,11 +1,12 @@
+// next.config.mjs
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
   images: {
-    unoptimized: true, // Required for static export as Next.js image optimization is not supported on static hosting
+    unoptimized: true,
   },
-  // Remove or comment out the next line if deploying to minorflunky.github.io
+  // Keep basePath if deploying to minorflunky.github.io/portfolio
   basePath: '/portfolio', 
 };
 
-module.exports = nextConfig;
+export default nextConfig;
