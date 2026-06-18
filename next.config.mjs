@@ -5,7 +5,7 @@ const nextConfig = {
     unoptimized: true,
   },
   // Keep '/portfolio' if deploying to minorflunky.github.io/portfolio
-  basePath: '/portfolio', 
+  basePath: '/semenov-portfolio', 
 };
 
 export default nextConfig;
