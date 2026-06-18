@@ -1,11 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true,
-  },
-  // Keep '/portfolio' if deploying to minorflunky.github.io/portfolio
-  basePath: '/semenov-portfolio', 
+  output: "export",  // <=== enables static exports
+  reactStrictMode: true,
+  basePath: process.env.NODE_ENV === "production" ? "/semenov-portfolio" : "",
 };
 
-export default nextConfig;
+module.exports = nextConfig;
