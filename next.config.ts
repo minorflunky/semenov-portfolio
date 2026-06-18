@@ -1,12 +1,12 @@
-// next.config.mjs
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  output: "export",
   images: {
     unoptimized: true,
   },
-  // Keep basePath if deploying to minorflunky.github.io/portfolio
-  basePath: '/portfolio', 
+  // Keep this line only if deploying to minorflunky.github.io/portfolio
+  basePath: "/semenov-portfolio", 
 };
 
 export default nextConfig;
