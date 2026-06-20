@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",  // <=== enables static exports
+  output: "export", // <=== enables static exports
   reactStrictMode: true,
-  basePath: process.env.NODE_ENV === "production" ? "/semenov-portfolio" : "",
+  basePath: "/semenov-portfolio", // <=== sets the base path for your project
 };
 
-module.exports = nextConfig;
+export default nextConfig;
+
