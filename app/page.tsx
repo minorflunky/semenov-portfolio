@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 
-type ThemeMode = "light-mode" | "dark-mode" | "cruelty-mode";
+type ThemeMode = "light-mode" | "dark-mode";
 
 interface Project {
   title: string;
@@ -71,7 +71,6 @@ export default function Home() {
         <div className="controls">
           <button className="btn btn-outline" onClick={() => changeTheme("light-mode")}>Light</button>
           <button className="btn btn-outline" onClick={() => changeTheme("dark-mode")}>Dark</button>
-          <button className="btn btn-outline btn-cruelty-toggle" onClick={() => changeTheme("cruelty-mode")}>Cruelty</button>
         </div>
 
         {/* Header */}
