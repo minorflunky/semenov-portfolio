@@ -2,7 +2,8 @@
 const nextConfig = {
   output: "export", // <=== enables static exports
   reactStrictMode: true,
-  basePath: "/semenov-portfolio", // <=== sets the base path for your project
+  basePath: "/semenov-portfolio",
+  assetPrefix: "/semenov-portfolio",
 };
 
 export default nextConfig;
